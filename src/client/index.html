@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocPeer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="toolbar">
+        <div class="toolbar-left">
+          <button id="btn-open" title="Open file">Open</button>
+          <span id="file-name">No file open</span>
+        </div>
+        <div class="toolbar-center">
+          <span id="thread-count"></span>
+        </div>
+        <div class="toolbar-right">
+          <select id="persona-select">
+            <option value="general">General Review</option>
+            <option value="devils-advocate">Devil's Advocate</option>
+            <option value="technical-depth">Technical Depth</option>
+            <option value="clarity">Clarity Check</option>
+          </select>
+          <button id="btn-review" disabled>Review</button>
+          <span id="review-status"></span>
+        </div>
+      </header>
+
+      <main id="workspace">
+        <div id="editor-area">
+          <div id="editor"></div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Popover for new comments (appears in margin beside selection) -->
+    <div id="comment-popover" class="hidden">
+      <textarea id="comment-input" placeholder="Add a comment..." rows="2"></textarea>
+      <div class="popover-actions">
+        <button id="btn-cancel-comment">Cancel</button>
+        <button id="btn-submit-comment">Comment</button>
+      </div>
+    </div>
+
+    <!-- Thread popover (appears beside highlighted text on click) -->
+    <div id="thread-popover" class="hidden"></div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "name": "docpeer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch src/server/index.ts",
+    "build": "vite build && tsc -p tsconfig.server.json"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@tiptap/core": "^2.11.0",
+    "@tiptap/extension-document": "^2.11.0",
+    "@tiptap/extension-heading": "^2.11.0",
+    "@tiptap/extension-paragraph": "^2.11.0",
+    "@tiptap/extension-text": "^2.11.0",
+    "@tiptap/extension-bold": "^2.11.0",
+    "@tiptap/extension-italic": "^2.11.0",
+    "@tiptap/extension-strike": "^2.11.0",
+    "@tiptap/extension-code": "^2.11.0",
+    "@tiptap/extension-code-block": "^2.11.0",
+    "@tiptap/extension-blockquote": "^2.11.0",
+    "@tiptap/extension-bullet-list": "^2.11.0",
+    "@tiptap/extension-ordered-list": "^2.11.0",
+    "@tiptap/extension-list-item": "^2.11.0",
+    "@tiptap/extension-hard-break": "^2.11.0",
+    "@tiptap/extension-horizontal-rule": "^2.11.0",
+    "@tiptap/extension-link": "^2.11.0",
+    "@tiptap/extension-highlight": "^2.11.0",
+    "@tiptap/pm": "^2.11.0",
+    "@tiptap/starter-kit": "^2.11.0",
+    "tiptap-markdown": "^0.8.0",
+    "chokidar": "^4.0.0",
+    "express": "^4.21.0",
+    "uuid": "^11.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.0",
+    "concurrently": "^9.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0"
+  }
+}

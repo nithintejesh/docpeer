@@ -1,0 +1,172 @@
+[
+  {
+    "id": "t1",
+    "anchor": {
+      "text": "the dashboard timeline slipped due to an unexpected API redesign in May",
+      "contextBefore": "ahead of schedule, but ",
+      "contextAfter": "."
+    },
+    "status": "open",
+    "unread": true,
+    "messages": [
+      {
+        "id": "m1",
+        "author": "ai",
+        "text": "What caused the 'unexpected' redesign? Was it external (upstream API change) or internal (scope creep)? The word 'unexpected' deflects accountability — consider being more specific about the root cause.",
+        "timestamp": 1716400000000
+      }
+    ],
+    "createdAt": 1716400000000
+  },
+  {
+    "id": "t2",
+    "anchor": {
+      "text": "We have no fallback plan for this scenario",
+      "contextBefore": "adds 2-3 weeks. ",
+      "contextAfter": "."
+    },
+    "status": "open",
+    "unread": true,
+    "messages": [
+      {
+        "id": "m2",
+        "author": "ai",
+        "text": "This is a critical admission buried in the middle of the doc. A dependency with no fallback and a hard deadline should be called out as a top-level risk, not mentioned in passing. What's the mitigation if payments team slips?",
+        "timestamp": 1716400001000
+      }
+    ],
+    "createdAt": 1716400001000
+  },
+  {
+    "id": "t3",
+    "anchor": {
+      "text": "the security review has not been scheduled yet",
+      "contextBefore": "Additionally, ",
+      "contextAfter": ". This could block"
+    },
+    "status": "open",
+    "unread": true,
+    "messages": [
+      {
+        "id": "m3",
+        "author": "ai",
+        "text": "Who owns scheduling this? 'Has not been scheduled' is passive voice hiding accountability. Add an owner and a deadline, or this will still be unscheduled when it becomes a blocker.",
+        "timestamp": 1716400002000
+      }
+    ],
+    "createdAt": 1716400002000
+  },
+  {
+    "id": "t4",
+    "anchor": {
+      "text": "Integration testing is 80% done with no blockers identified so far",
+      "contextBefore": "new endpoints. ",
+      "contextAfter": "."
+    },
+    "status": "open",
+    "unread": false,
+    "messages": [
+      {
+        "id": "m4",
+        "author": "ai",
+        "text": "80% done with no blockers is suspiciously optimistic. What's the remaining 20%? Is it the hard parts or easy cleanup? 'No blockers so far' is a red flag — what categories of testing remain?",
+        "timestamp": 1716400003000
+      },
+      {
+        "id": "m5",
+        "author": "human",
+        "text": "Fair point. The remaining 20% is the payments integration (which depends on v3 API) and the batch export edge cases. So yes, the hard parts are left.",
+        "timestamp": 1716400004000
+      },
+      {
+        "id": "m6",
+        "author": "ai",
+        "text": "So the 80% figure is misleading — it's really 'we've tested everything except the risky parts.' Consider rephrasing to '80% of test cases pass; remaining 20% depend on the payments v3 API delivery.' That sets expectations correctly.",
+        "timestamp": 1716400005000
+      }
+    ],
+    "createdAt": 1716400003000
+  },
+  {
+    "id": "743f065c-9558-46d8-ac2a-4f6e5e8f59c1",
+    "anchor": {
+      "text": "t tickets: down 45% (ex",
+      "contextBefore": " rate: 92% (up from 67%)Suppor",
+      "contextAfter": "ceeded target)Dashboard beta u"
+    },
+    "status": "resolved",
+    "unread": false,
+    "messages": [
+      {
+        "id": "46b50e37-c911-4c02-9991-adaef4dfb88c",
+        "author": "human",
+        "text": "Hello what are you doing",
+        "timestamp": 1779468451759
+      },
+      {
+        "id": "cf8de612-50a4-41b2-ae4b-06c811741541",
+        "author": "human",
+        "text": "But teh thing is i am not happy",
+        "timestamp": 1779468624148
+      }
+    ],
+    "createdAt": 1779468451759
+  },
+  {
+    "id": "88ba9c6a-245a-4023-afd3-9d55588bd7ec",
+    "anchor": {
+      "text": "board beta users: 23 ",
+      "contextBefore": "down 45% (exceeded target)Dash",
+      "contextAfter": "internal teamsAPI latency p99:"
+    },
+    "status": "open",
+    "unread": false,
+    "messages": [
+      {
+        "id": "9b23b81d-4d1b-42dd-bc3c-898105190439",
+        "author": "human",
+        "text": "Hello what are you doing",
+        "timestamp": 1779468896897
+      }
+    ],
+    "createdAt": 1779468896897
+  },
+  {
+    "id": "d0be7649-cc3d-4d36-9fc6-9625ea46b153",
+    "anchor": {
+      "text": " latency p99: 340ms (ta",
+      "contextBefore": "ta users: 23 internal teamsAPI",
+      "contextAfter": "rget: <500ms)RisksThe main ris"
+    },
+    "status": "open",
+    "unread": false,
+    "messages": [
+      {
+        "id": "5eaf36ce-b886-4dfa-912b-1bb6796a149b",
+        "author": "human",
+        "text": "Nothing is that good.",
+        "timestamp": 1779469338644
+      }
+    ],
+    "createdAt": 1779469338644
+  },
+  {
+    "id": "95b529f0-bd03-4dd1-8d7e-2ef214e497d5",
+    "anchor": {
+      "text": "API redesign is ",
+      "contextBefore": "track for a July release. The ",
+      "contextAfter": "complete and the frontend team"
+    },
+    "status": "open",
+    "unread": false,
+    "messages": [
+      {
+        "id": "e68cd912-fb4a-4769-a05e-1103cad919c0",
+        "author": "human",
+        "text": "Hello",
+        "timestamp": 1779470010569
+      }
+    ],
+    "createdAt": 1779470010569
+  }
+]
